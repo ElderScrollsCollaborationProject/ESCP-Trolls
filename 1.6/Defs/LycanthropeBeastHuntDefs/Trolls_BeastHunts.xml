@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Mashed_Bloodmoon.LycanthropeBeastHuntDef MayRequire="SirMashedPotato.Bloodmoon">
+        <defName>ESCP_BeastHunt_TrollAnima</defName>
+        <label>beast hunt: Anima troll</label>
+        <description>Consume the heart of an anima troll.</description>
+        <targetThingDef>ESCP_TrollAnima</targetThingDef>
+        <heartTexPath>UI/Icons/Mashed_Bloodmoon_BeastHeart_Anima</heartTexPath>
+    </Mashed_Bloodmoon.LycanthropeBeastHuntDef>
+
+    <Mashed_Bloodmoon.LycanthropeBeastHuntDef MayRequire="SirMashedPotato.Bloodmoon">
+        <defName>ESCP_BeastHunt_TrollGrahl</defName>
+        <label>beast hunt: Grahl</label>
+        <description>Consume the heart of a grahl.</description>
+        <targetThingDef>ESCP_TrollGrahl</targetThingDef>
+    </Mashed_Bloodmoon.LycanthropeBeastHuntDef>
+
+    <Mashed_Bloodmoon.LycanthropeBeastHuntDef MayRequire="SirMashedPotato.Bloodmoon">
+        <defName>ESCP_BeastHunt_TrollUdyrfrykte</defName>
+        <label>beast hunt: Udyrfrykte</label>
+        <description>Consume the heart of an udyrfrykte.</description>
+        <targetThingDef>ESCP_TrollUdyrfrykte</targetThingDef>
+    </Mashed_Bloodmoon.LycanthropeBeastHuntDef>
+
+</Defs>

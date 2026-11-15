@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mashed's Bloodmoon</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="Mashed_Bloodmoon_TrophyBase"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath>
+                    <value>
+                            <li>ESCP_TrollTophySmall_Anima</li>
+                            <li>ESCP_TrollTophySmall_Barren</li>
+                            <li>ESCP_TrollTophySmall_Boom</li>
+                            <li>ESCP_TrollTophySmall_Cave</li>
+                            <li>ESCP_TrollTophySmall_Coastal</li>
+                            <li>ESCP_TrollTophySmall_Forest</li>
+                            <li>ESCP_TrollTophySmall_Frost</li>
+                            <li>ESCP_TrollTophySmall_Fungal</li>
+                            <li>ESCP_TrollTophySmall_Grahl</li>
+                            <li>ESCP_TrollTophySmall_Hill</li>
+                            <li>ESCP_TrollTophySmall_Pygmy</li>
+                            <li>ESCP_TrollTophySmall_River</li>
+                            <li>ESCP_TrollTophySmall_Swamp</li>
+                            <li>ESCP_TrollTophySmall_Udyrfrykte</li>
+                            <li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Glowing</li>
+                            <li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Toxi</li>
+                            <li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Haemo</li>
+                            <li>ESCP_TrollDioramaGrand_Grahl</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

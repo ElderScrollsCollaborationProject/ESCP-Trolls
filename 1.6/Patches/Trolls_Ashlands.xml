@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mashed's Ashlands</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_Ashlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_BlightedAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.04</ESCP_TrollBarren>
+                            <ESCP_TrollUdyrfrykte>0.005</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_BlightedBogAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.04</ESCP_TrollBarren>
+                            <ESCP_TrollUdyrfrykte>0.005</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_BlightedPetrifiedForestAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.04</ESCP_TrollBarren>
+                            <ESCP_TrollUdyrfrykte>0.005</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_BlightedScarAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.04</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollUdyrfrykte>0.005</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_DustplainAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_ForestAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollForest>0.05</ESCP_TrollForest>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_GrazelandAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollPygmy>0.05</ESCP_TrollPygmy>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_HighlandAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_MarshAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollPygmy>0.05</ESCP_TrollPygmy>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_MeadowAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollPygmy>0.05</ESCP_TrollPygmy>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_SwampAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollSwamp>0.05</ESCP_TrollSwamp>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollRiver>0.025</ESCP_TrollRiver>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicBadlandAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicBasaltHillsAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicGroveAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.01</ESCP_TrollBarren>
+                            <ESCP_TrollPygmy>0.05</ESCP_TrollPygmy>
+                            <ESCP_TrollFungal>0.05</ESCP_TrollFungal>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicSulphurPitsAshlands"]/wildAnimals</xpath>
+                    <value>
+                            <ESCP_TrollBarren>0.05</ESCP_TrollBarren>
+                            <ESCP_TrollHill>0.025</ESCP_TrollHill>
+                            <ESCP_TrollCave>0.025</ESCP_TrollCave>
+                            <ESCP_TrollCoastal>0.025</ESCP_TrollCoastal>
+                            <ESCP_TrollUdyrfrykte>0.01</ESCP_TrollUdyrfrykte>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
