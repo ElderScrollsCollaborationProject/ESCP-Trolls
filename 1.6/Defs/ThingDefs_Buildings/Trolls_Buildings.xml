@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef  ParentName="ESCP_TrollTrophy_Base" Name="ESCP_TrollDioramaGrand_Base" Abstract="True">
+		<description>A diorama depicting the typical habitat of a specific kind of troll.</description>
+		<graphicData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		 <costStuffCount>500</costStuffCount>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Beauty>500</Beauty>
+			<Mass>28</Mass>
+			<WorkToMake>125000</WorkToMake>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollDioramaGrand_Base">
+		<defName>ESCP_TrollDioramaGrand_Grahl</defName>
+		<label>grahl diorama</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollDiorama/GrahlDiorama</texPath>
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+			<Corpse_ESCP_TrollGrahl>1</Corpse_ESCP_TrollGrahl>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="SculptureBase" Name="ESCP_TrollTrophy_Base" Abstract="True">
+		<description>The corpse of a troll, preserved and mounted on a bust. Proof of an accomplished hunter.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags Inherit="False"/>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<li>(1,0.16)</li>
+								<li>(2,0.20)</li>
+								<li>(3,0.22)</li>
+								<li>(4,0.24)</li>
+								<li>(5,0.26)</li>
+								<li>(6,0.28)</li>
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>ESCP_TrollTophySmall_Anima</li>
+							<li>ESCP_TrollTophySmall_Barren</li>
+							<li>ESCP_TrollTophySmall_Boom</li>
+							<li>ESCP_TrollTophySmall_Cave</li>
+							<li>ESCP_TrollTophySmall_Coastal</li>
+							<li>ESCP_TrollTophySmall_Forest</li>
+							<li>ESCP_TrollTophySmall_Frost</li>
+							<li>ESCP_TrollTophySmall_Fungal</li>
+							<li>ESCP_TrollTophySmall_Grahl</li>
+							<li>ESCP_TrollTophySmall_Hill</li>
+							<li>ESCP_TrollTophySmall_Pygmy</li>
+							<li>ESCP_TrollTophySmall_River</li>
+							<li>ESCP_TrollTophySmall_Swamp</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Glowing</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Toxi</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Haemo</li>
+							<li>ESCP_TrollTophySmall_Udyrfrykte</li>
+							<li>ESCP_TrollDioramaGrand_Grahl</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<li>(1,0.0)</li>
+								<li>(2,0.01)</li>
+								<li>(3,0.01)</li>
+								<li>(4,0.01)</li>
+								<li>(5,0.02)</li>
+								<li>(6,0.02)</li>
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef  ParentName="ESCP_TrollTrophy_Base" Name="ESCP_TrollTophySmall_Base" Abstract="True">
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<Beauty>100</Beauty>
+			<WorkToMake>8000</WorkToMake>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Anima</defName>
+		<label>anima troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/AnimaTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollAnima>1</Corpse_ESCP_TrollAnima>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Barren</defName>
+		<label>barren troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/BarrenTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollBarren>1</Corpse_ESCP_TrollBarren>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Boom</defName>
+		<label>boom troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/BoomTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollBoom>1</Corpse_ESCP_TrollBoom>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Cave</defName>
+		<label>cave troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/CaveTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollCave>1</Corpse_ESCP_TrollCave>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Coastal</defName>
+		<label>coastal troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/CoastalTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollCoastal>1</Corpse_ESCP_TrollCoastal>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Forest</defName>
+		<label>forest troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/ForestTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollForest>1</Corpse_ESCP_TrollForest>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Frost</defName>
+		<label>frost troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/FrostTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollFrost>1</Corpse_ESCP_TrollFrost>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Fungal</defName>
+		<label>fungal troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/FungalTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollFungal>1</Corpse_ESCP_TrollFungal>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Grahl</defName>
+		<label>grahl trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/GrahlTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollGrahl>1</Corpse_ESCP_TrollGrahl>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Hill</defName>
+		<label>hill troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/HillTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollHill>1</Corpse_ESCP_TrollHill>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Pygmy</defName>
+		<label>pygmy troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/PygmyTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollPygmy>1</Corpse_ESCP_TrollPygmy>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_River</defName>
+		<label>river troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/RiverTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollRiver>1</Corpse_ESCP_TrollRiver>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Swamp</defName>
+		<label>swamp troll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/SwampTrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollSwamp>1</Corpse_ESCP_TrollSwamp>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Udyrfrykte</defName>
+		<label>udyrfrykte trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/UdyrfrykteTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollUdyrfrykte>1</Corpse_ESCP_TrollUdyrfrykte>
+		</costList>
+	</ThingDef>
+
+</Defs>

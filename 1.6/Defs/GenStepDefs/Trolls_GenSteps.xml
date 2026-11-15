@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<GenStepDef>
+		<defName>ESCP_AfflictedTrollSite</defName>
+		<linkWithSite>ESCP_AfflictedTrollSite</linkWithSite>
+		<order>500</order>
+		<genStep Class="ESCP_Trolls.GenStep_AfflictedTroll"/>
+	</GenStepDef>
+
+</Defs>
